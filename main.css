@@ -35,7 +35,6 @@ header {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
     padding-bottom: 15px;
   }
@@ -46,15 +45,30 @@ header {
     transition: background-color 0.3s ease-in;
   }
 
+  a:hover {
+    color: #f6980c;
+  
+    transition: background-color 0.3s ease-in;
+  }
 
  
   .about__image {
     width: 500px;
   }
    
+  @keyframes rotation {
+    0% {
+      transform: rotate(0) ;
+    }
+   100% { transform: rotate(180deg) ;
+  }
+}
+
   .about__sun-image {
     width: 100px;
     height: 100px;
+    animation: rotation 10s linear infinite;
+    
   }
   .about {
     display: flex;
@@ -132,23 +146,16 @@ header {
     margin-bottom: 15px;
   }
 
-  .form input {
+  .form input, .form select {
+    border: none;
+    border-radius: 15px;
+    padding: 0 20px;
+    outline: none;
     font-size: 18px;
     color: #213053;
     height: 60px;
-    padding: 0 20 0 20;
-    border-radius: 15px;
-    border: none;
   }
   
-  .form select {
-    font-size: 18px;
-    color: #213053;
-    height: 60px;
-    padding: 0 20 0 20;
-    border-radius: 15px;
-    border: none; 
-  }
 
   .form__submit {
     font-size: 18px;
@@ -163,37 +170,42 @@ header {
     outline: none; /*граница при вводе тексат*/
   }
   
+
+
   footer {
-    padding: 90px 20px 90px 20px;
-    font-size: 16px;
+    padding: 90px 20px;
+    font-size: 16px;  
     font-weight: 600;
-  }
-
-  .footer__container {
-
-  }
-
-  .footer__copyright {
-   margin-top: 40px;
-   text-align: center;
-   opacity: 0.5;
-  }
-
-  .footer__group {
+ }
+  
+ .footer__container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-right: 80px;
-  }
+    justify-content: center;
+ }
+  
+ .footer__copyright {
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 40px;
+    justify-content: center;
+ }
 
-  .footer__links a{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 25px;
-  }
-   footer h3 {
-    font-size: 16px;
-    opacity: 0.7;
-    margin: 30px;
-   }
+ .footer__group {
+  margin-right: 80px;
+}
+
+footer h3 {
+  opacity: 0.7;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links a {
+  margin-bottom: 15px;
+}
+
