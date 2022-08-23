@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Солнечные батареи GreenCorp</title>
+  <link rel="stylesheet" href="/fa/fontawesome-free-6.1.2-web/css/all.min.css">
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <header>
@@ -14,15 +17,15 @@
     </div>
   </header>
   <section class="about">
-    <div class="about__info">
+    <div class="about__info animate__animated animate__fadeInLeft animate__slow">
       <h1>Солнечные панели GreenRobotic</h1>
       <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-      <button>Узнать подробнее</button>
-    </div>
-    <div class="about__images">
+      <button>Узнать подробнее <i class="fas fa-angle-right"></i></button>
+  </div>
+  <div class="about__images animate__animated animate__fadeInRight animate__slow">
       <img class="about__sun-image" src="img/sun.png">
       <img class="about__image" src="img/solar-panel.png">
-    </div>
+  </div>
   </section>
   <section class="form">
     <div class="form__container">
@@ -86,10 +89,10 @@
     </div>
   
     <div class="footer__copyright">
-        GreenCorp © 2021
+        GreenCorp © 2022
     </div>
  </footer>
-  
+  <script src="/fa/fontawesome-free-6.1.2-web/js/all.min.js"></script>
 </body>
 
 <!-- уточнить на счет футера обернуть все footer__group -->
